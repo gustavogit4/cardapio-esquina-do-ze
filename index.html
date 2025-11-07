@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esquina do Zé 🍻</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>🍻 Esquina do Zé</h1>
+    <p>Peça pelo WhatsApp — atendimento rápido e direto na mesa!</p>
+  </header>
+
+  <main>
+    <!-- ESPECIAL DO DIA -->
+    <section>
+      <h2>🍽️ Especial do Dia</h2>
+      <ul>
+        <li>Quarta: Maçã de Peito — R$ 27,90</li>
+        <li>Quinta: Dobradinha com Feijão — R$ 25,90</li>
+        <li>Sexta: Língua ao Molho com Pão — R$ 25,90</li>
+        <li>Sábado: Pernil Assado — R$ 27,00</li>
+        <li>Domingo: Galinhada — R$ 25,00</li>
+      </ul>
+    </section>
+
+    <!-- PORÇÕES -->
+    <section>
+      <h2>🍟 Porções</h2>
+      <div class="menu-item"><span>Fígado com Jiló</span><span>R$ 27,00</span><button onclick="addItem('Fígado com Jiló',27)">Adicionar</button></div>
+      <div class="menu-item"><span>Fritas com Lombo</span><span>R$ 34,90</span><button onclick="addItem('Fritas com Lombo',34.9)">Adicionar</button></div>
+      <div class="menu-item"><span>Fritas</span><span>R$ 22,00</span><button onclick="addItem('Fritas',22)">Adicionar</button></div>
+      <div class="menu-item"><span>Almôndega</span><span>R$ 12,00</span><button onclick="addItem('Almôndega',12)">Adicionar</button></div>
+      <div class="menu-item"><span>Contra Filé com Fritas</span><span>R$ 55,00</span><button onclick="addItem('Contra Filé com Fritas',55)">Adicionar</button></div>
+      <div class="menu-item"><span>Contra Filé com Mandioca Cozida</span><span>R$ 49,00</span><button onclick="addItem('Contra Filé com Mandioca Cozida',49)">Adicionar</button></div>
+      <div class="menu-item"><span>Torresmo de Barriga (pedaço)</span><span>R$ 12,00</span><button onclick="addItem('Torresmo de Barriga (pedaço)',12)">Adicionar</button></div>
+      <div class="menu-item"><span>Torresmo de Barriga com Mandioca</span><span>R$ 29,00</span><button onclick="addItem('Torresmo de Barriga com Mandioca',29)">Adicionar</button></div>
+      <div class="menu-item"><span>Filé de Tilápia</span><span>R$ 45,00</span><button onclick="addItem('Filé de Tilápia',45)">Adicionar</button></div>
+      <div class="menu-item"><span>Pão com Linguiça</span><span>R$ 17,00</span><button onclick="addItem('Pão com Linguiça',17)">Adicionar</button></div>
+      <div class="menu-item"><span>Pão com Pernil</span><span>R$ 17,00</span><button onclick="addItem('Pão com Pernil',17)">Adicionar</button></div>
+      <div class="menu-item"><span>Caldo de Mandioca ou Feijão</span><span>R$ 14,00</span><button onclick="addItem('Caldo de Mandioca ou Feijão',14)">Adicionar</button></div>
+      <div class="menu-item"><span>Pururuca</span><span>R$ 11,00</span><button onclick="addItem('Pururuca',11)">Adicionar</button></div>
+    </section>
+
+    <!-- CERVEJAS -->
+    <section>
+      <h2>🍺 Cervejas</h2>
+      <div class="menu-item"><span>Heineken</span><span>R$ 18,00</span><button onclick="addItem('Heineken',18)">Adicionar</button></div>
+      <div class="menu-item"><span>Amstel</span><span>R$ 12,00</span><button onclick="addItem('Amstel',12)">Adicionar</button></div>
+      <div class="menu-item"><span>Estrella Galicia</span><span>R$ 14,90</span><button onclick="addItem('Estrella Galicia',14.9)">Adicionar</button></div>
+      <div class="menu-item"><span>Spaten</span><span>R$ 16,00</span><button onclick="addItem('Spaten',16)">Adicionar</button></div>
+      <div class="menu-item"><span>Stella Artois</span><span>R$ 16,00</span><button onclick="addItem('Stella Artois',16)">Adicionar</button></div>
+      <div class="menu-item"><span>Original</span><span>R$ 16,00</span><button onclick="addItem('Original',16)">Adicionar</button></div>
+      <div class="menu-item"><span>Petra</span><span>R$ 13,00</span><button onclick="addItem('Petra',13)">Adicionar</button></div>
+      <div class="menu-item"><span>Brahma</span><span>R$ 13,00</span><button onclick="addItem('Brahma',13)">Adicionar</button></div>
+      <div class="menu-item"><span>Heineken Latão</span><span>R$ 12,00</span><button onclick="addItem('Heineken Latão',12)">Adicionar</button></div>
+      <div class="menu-item"><span>Petra Latão</span><span>R$ 10,00</span><button onclick="addItem('Petra Latão',10)">Adicionar</button></div>
+    </section>
+
+    <!-- CACHAÇAS -->
+    <section>
+      <h2>🥃 Cachaças</h2>
+      <div class="menu-item"><span>Guaraciaba Extra Premium</span><span>R$ 19,90</span><button onclick="addItem('Guaraciaba Extra Premium',19.9)">Adicionar</button></div>
+      <div class="menu-item"><span>Guaraciaba Premium</span><span>R$ 12,00</span><button onclick="addItem('Guaraciaba Premium',12)">Adicionar</button></div>
+      <div class="menu-item"><span>Vale Verde</span><span>R$ 13,00</span><button onclick="addItem('Vale Verde',13)">Adicionar</button></div>
+      <div class="menu-item"><span>Salinas</span><span>R$ 11,50</span><button onclick="addItem('Salinas',11.5)">Adicionar</button></div>
+      <div class="menu-item"><span>Seleta</span><span>R$ 10,50</span><button onclick="addItem('Seleta',10.5)">Adicionar</button></div>
+      <div class="menu-item"><span>Da Roça</span><span>R$ 5,50</span><button onclick="addItem('Da Roça',5.5)">Adicionar</button></div>
+    </section>
+
+    <!-- WHISKY -->
+    <section>
+      <h2>🥃 Whisky</h2>
+      <div class="menu-item"><span>Johnnie Walker Red Label</span><span>R$ 17,00</span><button onclick="addItem('Johnnie Walker Red Label',17)">Adicionar</button></div>
+      <div class="menu-item"><span>White Horse</span><span>R$ 14,90</span><button onclick="addItem('White Horse',14.9)">Adicionar</button></div>
+      <div class="menu-item"><span>Jack Daniel’s</span><span>R$ 22,00</span><button onclick="addItem('Jack Daniel’s',22)">Adicionar</button></div>
+    </section>
+
+    <!-- DOSES / DRINKS -->
+    <section>
+      <h2>🍸 Doses / Drinks</h2>
+      <div class="menu-item"><span>Campari</span><span>R$ 15,90</span><button onclick="addItem('Campari',15.9)">Adicionar</button></div>
+      <div class="menu-item"><span>Vodka Orlof</span><span>R$ 11,90</span><button onclick="addItem('Vodka Orlof',11.9)">Adicionar</button></div>
+      <div class="menu-item"><span>Rum</span><span>R$ 14,90</span><button onclick="addItem('Rum',14.9)">Adicionar</button></div>
+      <div class="menu-item"><span>Gin</span><span>R$ 13,00</span><button onclick="addItem('Gin',13)">Adicionar</button></div>
+      <div class="menu-item"><span>Domecq</span><span>R$ 12,00</span><button onclick="addItem('Domecq',12)">Adicionar</button></div>
+      <div class="menu-item"><span>Caipvodka</span><span>R$ 15,90</span><button onclick="addItem('Caipvodka',15.9)">Adicionar</button></div>
+      <div class="menu-item"><span>Caipirinha</span><span>R$ 11,90</span><button onclick="addItem('Caipirinha',11.9)">Adicionar</button></div>
+    </section>
+    <!-- SEM ÁLCOOL -->
+    <section>
+      <h2>🧃 Sem Álcool</h2>
+      <div class="menu-item"><span>Cerveja Lata</span><span>R$ 8,00</span><button onclick="addItem('Cerveja Lata',8)">Adicionar</button></div>
+      <div class="menu-item"><span>Água sem gás</span><span>R$ 3,50</span><button onclick="addItem('Água sem gás',3.5)">Adicionar</button></div>
+      <div class="menu-item"><span>Água com gás</span><span>R$ 5,50</span><button onclick="addItem('Água com gás',5.5)">Adicionar</button></div>
+      <div class="menu-item"><span>Suco Lata</span><span>R$ 6,00</span><button onclick="addItem('Suco Lata',6)">Adicionar</button></div>
+      <div class="menu-item"><span>Limonada Suíça</span><span>R$ 6,00</span><button onclick="addItem('Limonada Suíça',6)">Adicionar</button></div>
+      <div class="menu-item"><span>Refrigerante</span><span>R$ 6,00</span><button onclick="addItem('Refrigerante',6)">Adicionar</button></div>
+    </section>
+
+    <!-- ESPETINHOS -->
+    <section>
+      <h2>🍢 Espetinhos</h2>
+      <div class="menu-item"><span>Medalhão / Kafta</span><span>—</span><button onclick="addItem('Medalhão / Kafta',0)">Adicionar</button></div>
+      <div class="menu-item"><span>Almôndega Recheada com Queijo</span><span>—</span><button onclick="addItem('Almôndega Recheada com Queijo',0)">Adicionar</button></div>
+      <div class="menu-item"><span>Porco / Salsichão</span><span>R$ 14,50</span><button onclick="addItem('Porco / Salsichão',14.5)">Adicionar</button></div>
+      <div class="menu-item"><span>Boi</span><span>R$ 19,00</span><button onclick="addItem('Boi',19)">Adicionar</button></div>
+      <p class="info">Acompanha farofa e vinagrete ou mandioca.</p>
+    </section>
+
+    <!-- CORTESIA -->
+    <section>
+      <h2>🐔 Cortesia</h2>
+      <p>Pé de Galinha aos Sábados</p>
+    </section>
+
+    <!-- CARRINHO DE PEDIDO -->
+    <section id="pedido">
+      <h2>🧾 Seu Pedido</h2>
+      <ul id="lista-pedido"></ul>
+      <p id="total">Nenhum item adicionado.</p>
+      <div class="botoes-pedido">
+        <button id="limpar" onclick="limparPedido()">🗑️ Limpar Pedido</button>
+        <button id="enviar" onclick="enviarPedido()">📩 Enviar pelo WhatsApp</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por <strong>gustavogit4</strong> — Esquina do Zé © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

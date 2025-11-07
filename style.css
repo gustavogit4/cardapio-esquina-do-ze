@@ -1,0 +1,183 @@
+/* ======== ESTILO GERAL ======== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #f9d976 0%, #f39f86 100%);
+  margin: 0;
+  padding: 0;
+  color: #3a1f04;
+}
+
+/* ======== CABEÇALHO ======== */
+header {
+  background-color: #5a1e00;
+  color: #fff8e1;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+header p {
+  margin: 8px 0 0;
+  font-size: 0.95em;
+}
+
+/* ======== SEÇÕES ======== */
+section {
+  background-color: #fff8e1;
+  margin: 16px;
+  border-radius: 10px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #5a1e00;
+  border-bottom: 2px solid #e08b00;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* ======== ITENS DE MENU ======== */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+  border-bottom: 1px dashed #d0a85c;
+  padding: 4px 0;
+}
+
+.menu-item span {
+  font-size: 1em;
+}
+
+.menu-item button {
+  background-color: #e08b00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-item button:hover {
+  background-color: #cf7d00;
+}
+
+/* ======== CARRINHO DE PEDIDOS ======== */
+#pedido {
+  background-color: #ffecc2;
+  text-align: center;
+}
+
+#pedido ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#pedido li {
+  margin: 6px 0;
+  font-size: 0.95em;
+}
+
+.botoes-pedido {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#enviar {
+  background-color: #5a1e00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#enviar:hover {
+  background-color: #8b0000;
+}
+
+#limpar {
+  background-color: #b52b27;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#limpar:hover {
+  background-color: #8b0000;
+}
+
+/* ======== BOTÕES INTERNOS ======== */
+.remove, .quant-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 6px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.quant-btn {
+  background-color: #e08b00;
+  margin: 0 3px;
+}
+
+.quant-btn:hover {
+  background-color: #d67f00;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+  text-align: center;
+  background-color: #5a1e00;
+  color: #fff8e1;
+  padding: 10px 0;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+/* ======== TEXTO DE INFO ======== */
+.info {
+  font-size: 0.85em;
+  color: #553a00;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 600px) {
+  section {
+    margin: 10px;
+    padding: 12px;
+  }
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu-item button {
+    margin-top: 4px;
+    align-self: flex-end;
+  }
+}
